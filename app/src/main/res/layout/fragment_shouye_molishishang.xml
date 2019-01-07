@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp_75"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:layout_width="@dimen/dp_75"
+        android:layout_height="@dimen/dp_75"
+        android:src="@mipmap/ic_launcher"
+        android:id="@+id/shouyefragment_imagerview_rexiaoshangpin"
+        />
+
+    <TextView
+        android:id="@+id/shouyefragment_textview_rexiaoshangpinshang"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        app:layout_constraintLeft_toRightOf="@+id/shouyefragment_imagerview_rexiaoshangpin"
+        android:textSize="12sp"
+        android:singleLine="true"
+        android:textColor="#666666"
+        android:text="asd"/>
+    <TextView
+        android:id="@+id/shouyefragment_textview_rexiaoshangpinxia"
+        android:layout_width="80dp"
+        android:layout_marginLeft="@dimen/dp_20"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/shouyefragment_textview_rexiaoshangpinshang"
+        app:layout_constraintLeft_toRightOf="@+id/shouyefragment_imagerview_rexiaoshangpin"
+        android:textSize="14sp"
+
+
+        android:textColor="#ff0000"
+        android:text="asd"/>
+
+</android.support.constraint.ConstraintLayout>

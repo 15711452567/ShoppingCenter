@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.home.SearchActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_80"
+        >
+
+        <ImageView
+            android:id="@+id/sousuoactivity_imageview_fenlei"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@mipmap/shouyeshanga"
+            android:layout_marginTop="36dp"
+            android:layout_marginLeft="24dp"
+            />
+        <EditText
+            android:id="@+id/shurusousuo"
+            android:layout_width="230dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:hint="请输入搜索"
+
+            android:paddingLeft="20dp"
+            android:layout_marginLeft="78dp"/>
+        <ImageView
+            android:id="@+id/sousuoactivity_imageview_sousuo"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@mipmap/shouyeshangb"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="36dp"
+            android:layout_marginRight="24dp"
+
+            />
+    </RelativeLayout>
+
+
+    <ImageView
+        android:id="@+id/sousuoActivity_imageview_sousuokong"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_100"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="@dimen/dp_80"
+        android:layout_marginBottom="@dimen/dp_300"
+        android:src="@mipmap/sousuokong"
+        android:visibility="visible"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/sousuoActivity_xrecy_sousuo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="@dimen/dp_80"
+        android:layout_marginBottom="@dimen/dp_100"
+        android:visibility="visible"></android.support.v7.widget.RecyclerView>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_100"
+        android:background="@mipmap/rectangle"
+        android:layout_alignParentBottom="true"
+        >
+        <RadioGroup
+            android:id="@+id/homeactivity_radiogroup"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="bottom"
+            android:gravity="bottom"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/homeactivity_radiobutton_hone"
+                android:layout_marginLeft="@dimen/dp_35"
+                android:layout_width="@dimen/dp_20"
+                android:layout_height="@dimen/dp_20"
+                android:layout_weight="1"
+                android:button="@null"
+                android:background="@mipmap/common_tab_btn_home_s"/>
+            <RadioButton
+                android:id="@+id/homeactivity_radiobutton_circle"
+                android:layout_width="@dimen/dp_20"
+                android:layout_marginLeft="@dimen/dp_35"
+                android:layout_weight="1"
+                android:layout_height="@dimen/dp_20"
+                android:button="@null"
+                android:background="@mipmap/common_tab_btn_circle_n"/>
+            <RadioButton
+                android:id="@+id/homeactivity_radiobutton_shoopingcart"
+                android:layout_width="@dimen/dp_60"
+                android:layout_marginLeft="@dimen/dp_35"
+                android:paddingLeft="@dimen/dp_50"
+                android:layout_weight="1"
+                android:layout_height="@dimen/dp_60"
+                android:button="@null"
+                android:background="@mipmap/commom_tab_btn_shoppingcart_n"/>
+            <RadioButton
+                android:id="@+id/homeactivity_radiobutton_list"
+                android:layout_width="@dimen/dp_20"
+                android:layout_marginLeft="@dimen/dp_35"
+                android:layout_height="@dimen/dp_20"
+                android:layout_weight="1"
+                android:layout_marginRight="@dimen/dp_18"
+                android:button="@null"
+                android:background="@mipmap/common_tab_btn_list_n"/>
+            <RadioButton
+                android:id="@+id/homeactivity_radiobutton_my"
+                android:layout_width="@dimen/dp_20"
+                android:layout_marginLeft="@dimen/dp_35"
+                android:layout_height="@dimen/dp_20"
+                android:layout_weight="1"
+                android:layout_marginRight="@dimen/dp_18"
+                android:button="@null"
+                android:background="@mipmap/common_tab_btn_my_n"/>
+        </RadioGroup>
+    </LinearLayout>
+
+</RelativeLayout>

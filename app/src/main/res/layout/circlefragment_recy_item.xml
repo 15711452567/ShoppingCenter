@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="20dp"
+    android:layout_marginTop="44dp"
+    app:cardCornerRadius="9dp"
+    app:cardElevation="4dp"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/circlefragment_simpledraweeView_touxiang"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            fresco:placeholderImage="@mipmap/ic_launcher"
+            />
+        <TextView
+            android:id="@+id/circlefragment_textview_mingzi"
+            android:text="小白牛"
+            android:layout_marginLeft="76dp"
+            android:layout_marginTop="25dp"
+            android:textSize="14sp"
+            android:textColor="#666666"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/circlefragment_textview_shijian"
+            android:text="asd"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="25dp"
+            android:textColor="#666666"
+            android:textSize="10sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/circlefragment_textview_xiangqing"
+            android:text="asd"
+            android:layout_marginTop="70dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:textColor="#666666"
+            android:textSize="12sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/circlefragment_simpledraweeView_pinglun"
+            android:layout_width="200dp"
+            android:layout_height="250dp"
+            android:layout_marginTop="120dp"
+            fresco:placeholderImage="@mipmap/ic_launcher"/>
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/circlefragment_simple_like"
+            android:layout_width="@dimen/dp_30"
+            android:layout_height="@dimen/dp_30"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="@dimen/dp_370"
+            android:background="@mipmap/common_btn_prise_n"
+
+            android:layout_marginRight="@dimen/dp_70"/>
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/circlefragment_simple_likes"
+            android:layout_width="@dimen/dp_30"
+            android:layout_height="@dimen/dp_30"
+            android:visibility="gone"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="@dimen/dp_370"
+            android:background="@mipmap/common_btn_prise_s"
+
+            android:layout_marginRight="@dimen/dp_70"/>
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

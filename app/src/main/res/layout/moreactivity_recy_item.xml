@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/moreactivity_recy_simple"
+        android:layout_width="@dimen/dp_150"
+        android:layout_height="@dimen/dp_150"
+        android:background="@mipmap/ic_launcher_round"/>
+
+    <TextView
+        android:layout_width="@dimen/dp_150"
+        android:layout_height="wrap_content"
+        android:text="asd"
+        android:singleLine="true"
+        android:id="@+id/moreactivity_recy_title"
+        app:layout_constraintTop_toBottomOf="@+id/moreactivity_recy_simple"/>
+    <TextView
+        android:id="@+id/moreactivity_recy_price"
+        android:layout_width="@dimen/dp_50"
+        android:layout_height="wrap_content"
+        android:text="sd"
+        app:layout_constraintTop_toBottomOf="@+id/moreactivity_recy_title"/>
+    <TextView
+        android:id="@+id/moreactivity_recy_num"
+        android:layout_width="@dimen/dp_100"
+        android:layout_height="wrap_content"
+        android:text="已售出4件"
+        app:layout_constraintTop_toBottomOf="@+id/moreactivity_recy_title"
+        app:layout_constraintLeft_toRightOf="@+id/moreactivity_recy_price"/>
+
+</android.support.constraint.ConstraintLayout>

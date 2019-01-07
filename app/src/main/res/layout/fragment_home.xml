@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragment.HomeFragment">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/homefragment_imageview_fenlei"
+            android:layout_width="@dimen/dp_24"
+            android:layout_height="@dimen/dp_24"
+            android:src="@mipmap/shouyeshanga"
+            android:layout_marginTop="@dimen/dp_36"
+            android:layout_marginLeft="@dimen/dp_24"
+            />
+        <ImageView
+            android:id="@+id/homefragment_imageview_sousuo"
+            android:layout_width="@dimen/dp_24"
+            android:layout_height="@dimen/dp_24"
+            android:src="@mipmap/shouyeshangb"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="@dimen/dp_36"
+            android:layout_marginRight="@dimen/dp_24"
+
+            />
+
+        <com.stx.xhb.xbanner.XBanner
+            android:id="@+id/homefragment_banner"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="@dimen/dp_100"
+            android:clipChildren="false"
+            app:AutoPlayTime="3000"
+            app:clipChildrenLeftRightMargin="@dimen/dp_40"
+            app:isClipChildrenMode="true"
+            app:isShowNumberIndicator="true"
+            app:isShowIndicatorOnlyOne="true"
+            app:pageChangeDuration="800"
+            android:layout_height="@dimen/dp_250"></com.stx.xhb.xbanner.XBanner>
+
+        <ImageView
+            android:id="@+id/homefragment_imageview_resoushangpin"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_30"
+            android:src="@mipmap/shouyerexiaoshangpin"
+
+            android:layout_marginTop="380dp"/>
+
+        <TextView
+            android:text="热销商品"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ff7f57"
+            android:textSize="@dimen/sp_16"
+            android:layout_marginTop="382dp"
+            android:layout_centerHorizontal="true"
+            />
+
+        <ImageView
+            android:id="@+id/homefragment_image_rxxpmore"
+            android:layout_width="@dimen/dp_24"
+            android:layout_height="@dimen/dp_12"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/dp_24"
+            android:layout_marginTop="385dp"
+            android:src="@mipmap/molishishang"
+            />
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/homefragment_recyclerview_rexiaoshangpin"
+            android:layout_width="@dimen/dp_500"
+            android:layout_height="@dimen/dp_166"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/dp_10"
+            android:layout_marginLeft="@dimen/dp_24"
+            android:layout_marginTop="430dp"
+            ></android.support.v7.widget.RecyclerView>
+
+        <ImageView
+            android:id="@+id/homefragment_imageview_molishishang"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_30"
+            android:src="@mipmap/shouyemolishishang"
+            android:layout_marginTop="@dimen/dp_600"/>
+
+        <TextView
+            android:text="魔力时尚"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ff7f57"
+            android:textSize="@dimen/sp_16"
+            android:layout_marginTop="602dp"
+            android:layout_centerHorizontal="true"
+            />
+
+        <ImageView
+            android:id="@+id/homefragment_image_mlssmore"
+            android:layout_width="@dimen/dp_24"
+            android:layout_height="@dimen/dp_12"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/dp_24"
+            android:layout_marginTop="605dp"
+            android:src="@mipmap/molishishang"
+            />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/homefragment_recyclerview_molishishang"
+            android:layout_width="@dimen/dp_500"
+            android:layout_height="@dimen/dp_166"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="@dimen/dp_24"
+            android:layout_marginTop="@dimen/dp_640"
+            android:layout_marginRight="@dimen/dp_10"></android.support.v7.widget.RecyclerView>
+
+
+
+        <ImageView
+            android:id="@+id/homefragment_imageview_pinzhishenghuo"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_30"
+            android:src="@mipmap/shouyepinzhishanghuo"
+            android:layout_marginTop="810dp"/>
+
+        <TextView
+            android:text="品质生活"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ff7f57"
+            android:textSize="@dimen/sp_16"
+            android:layout_marginTop="812dp"
+            android:layout_centerHorizontal="true"
+            />
+
+        <ImageView
+            android:id="@+id/homefragment_image_pzshmore"
+            android:layout_width="@dimen/dp_24"
+            android:layout_height="@dimen/dp_12"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/dp_24"
+            android:layout_marginTop="815dp"
+            android:src="@mipmap/molishishang"
+            />
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/homefragment_recyclerview_pinzhishenghuo"
+            android:layout_width="@dimen/dp_500"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/dp_10"
+            android:layout_marginLeft="@dimen/dp_24"
+            android:layout_marginTop="840dp"
+            ></android.support.v7.widget.RecyclerView>
+
+
+    </RelativeLayout>
+
+
+
+
+
+
+
+
+
+</ScrollView>
